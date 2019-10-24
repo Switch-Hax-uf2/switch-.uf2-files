@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#command python uf2conv.py -o "end_file_name.uf2" "start_file_name.bin"
+#command python uf2conv.py -o end_file_name.uf2 start_file_name.bin
 import sys
 import struct
 import subprocess
