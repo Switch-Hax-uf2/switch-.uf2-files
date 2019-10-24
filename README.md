@@ -1,6 +1,9 @@
 # switch-.uf2-files
 Want .uf2 files for your switch hacking needs? ask and link to the .bin payload you want, and I may get to it in my free time. I understand many don't want to learn to do it themselves, but I did, and I am willing to help. (mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch dongle RCM-X86 dongle but I'm almost sure that it will work for any dongle and/or internal mod)
 
+Please note: this guide was made for users who have the Windows as their OS, while most of it could work for MacOS or Linux I can not help you there, I have no experience for MacOS and only use Linux on server based stuff.
+
+I take no credit for any files in this repository and what every harm they may or may not bring, all these files I located on the internet and I modified a few of them (very little) to make sure they work properly. You have been warned.
 
 If you want to learn to build your own uf2 files you can follow this guide
 
@@ -28,11 +31,9 @@ Install USBHOst by Arduino
 
 )
 
-Download 
+Download the files in build folder or the latest release.
 
 Once you reach this step your mostly set up to make your own .uf2 files.
-
-I take no credits for anything under this repository, I am simple putting it here for ease of use so more people can build their own .uf2 files
 
 The build.ino is from euclala's repository and the python files I found somewhere I don't remember.
 
