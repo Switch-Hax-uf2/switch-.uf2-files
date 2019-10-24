@@ -44,23 +44,29 @@ run this command in cmd (python binConverter.py %nameof.bin%) to convert the .bi
 
 At this point I would rename the .h file to one of the respective names for ease of use with the build.ino
 
-  "TXOS.h"
-  "rajnx_ipl072.h"
-  "hekate_ctcaer_32.h"
-  "ReiNX.h"
-  "argon-nx.h"
+   "TXOS.h"
+   "rajnx_ipl072.h"
+   "hekate_ctcaer_32.h"
+   "ReiNX.h"
+   "argon-nx.h"
   
 If you have your own cfw you want to run you can name it accordingly and add it somewhere in the lines after 16 following the same format as the other (note: to use the build.ino you will have to change it for every different name you use but its set up easily to do so, just remove the 2 forward slashed Infront of the #include "%name%" and it will load it.)
 
 For example, let’s say you want to convert argon-nx, but you also have a few of your homemade cfw's:
 
-  //#include "TXOS.h"
-  //#include "rajnx_ipl072.h"
-  //#include "hekate_ctcaer_32.h"
-  //#include "ReiNX.h"
-  #include "argon-nx.h"
-  //#include "homemadecfw01"
-  //#include "homemadecfw02"
+   //#include "TXOS.h"
+   
+   //#include "rajnx_ipl072.h"
+   
+   //#include "hekate_ctcaer_32.h"
+   
+   //#include "ReiNX.h"
+   
+   #include "argon-nx.h"
+   
+   //#include "homemadecfw01"
+   
+   //#include "homemadecfw02"
 
 Using the 2 forward slashed nulls the lines it’s on.
 
