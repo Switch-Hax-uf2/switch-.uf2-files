@@ -24,23 +24,27 @@ Summary:
 * go to "Tools > Board > Board Manager" and select Type: All and
 * Install "Arduino SAMD Boards" by Arduino 
 * Install "Adafruit SAMD Boards" by Adafruit 
-* Select the Trinket M0 with "Tools > Board > Adafruit Trinket M0"
+* Select the Trinket M0 with "Tools > Board > Adafruit SAMD > Adafruit Trinket M0"
 
 Go to Sketch > Include Library > Manage Libraries
 Install USBHOst by Arduino
 
 )
 
-Download the files in build folder or the latest release.
+Download the files in build folder (I would download the folder to work in, put your payload.bin in here as well) or the latest release.
 
 Once you reach this step your mostly set up to make your own .uf2 files.
 
-The build.ino is from euclala's repository and the python files I found somewhere I don't remember.
+The build.ino is from euclala's repository and the python files I found somewhere I don't remember, the batch files I created to make it a little easier to use.
 
+If you want to use the python files instead of the batch files (python is still required)
 open cmd and cd to the location where you are working
 (command is cd %filelocation%)
 
 run this command in cmd (python binConverter.py %nameof.bin%) to convert the .bin file to a .h file (the file used for the build.ino)
+
+If you want to use the batch files (a little easier)
+Open 1binConverter.bat and input the payload.bin (or path to such file). It will convert it to %nameof.h%
 
 At this point I would rename the .h file to one of the respective names for ease of use with the build.ino
 
@@ -70,17 +74,21 @@ For example, let’s say you want to convert argon-nx, but you also have a few o
 
 Using the 2 forward slashed nulls the lines it’s on.
 
-How to build a .bin from .h ------------------------------------------
+How to build a .bin from .h
 
-Once you have your .bin saved from arduino IDE you can close arduino IDE, while you can flash the board directly from the program if you want, to make the .uf2 it’s a little bit more.
+Now you have your .h file in the same folder as the build.ino you are ready for the next step. I would verify the file can be built first before you actually build it. At this time I would verify you have the proper board selected ("Tools > Board > Adafruit SAMD > Adafruit Trinket M0") and now verify using the checkmark verify button. When it is done verifing you can export compiled binary under "Sketch > Export Compiled Binary"
 
+Once you have your .bin saved from arduino IDE you can close arduino IDE , while you can flash the board directly from the Arduino IDE if you want it requires a little bit more to make the .uf2.
+
+If you want to use the python files instead of the batch files (python is still required)
 open cmd and cd to the location where you are working
 (command is "cd %filelocation%")
 
 use the cmd and use this command (python uf2conv.py -o end_file_name.uf2 start_file_name.bin), changing the end_file_name.uf2 to the file you want its end name to be, for example "argon-nx.uf2" and the start_file_name.bin the name of the .bin you got from arduino IDE, for example "argon-nx.bin" (note: I would not try to load the bin to the dongle or your switch, it may break, and again I take no responsibility for any damage done to your items)
 
+If you want to use the batch files (a little easier)
+Open 2uf2conv.bat and input the .bin arduino IDE created, and hit enter. Next enter the name you would like the .uf2 to output as (%nameof.uf2%), and you should have a file created as output.
+
+
 After the conversion is done you should be golden, enjoy.
-
-
-
 
