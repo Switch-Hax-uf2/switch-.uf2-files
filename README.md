@@ -1,3 +1,5 @@
+<img src="img/splash.jpg" alt="banner">
+
 # switch-.uf2-files
 
 <p>Want .uf2 files for your switch hacking needs? Ask and link to the .bin payload you want, and I may get to it in my free time. I understand many don't want to learn to do it themselves, but I did, and I am willing to help.
