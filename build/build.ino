@@ -14,8 +14,7 @@
 //#include "hekate.h"
 //#include "reinx.h"
 //#include "argon-nx.h"
-//#include "homemadecfw01.h"
-//#include "homemadecfw02.h"
+//#include "atmosphere.h"
 
 #define INTERMEZZO_SIZE 92
 const byte intermezzo[INTERMEZZO_SIZE] =
