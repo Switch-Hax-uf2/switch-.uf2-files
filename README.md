@@ -1,5 +1,5 @@
 # switch-.uf2-files
-Want .uf2 files for your switch hacking needs? ask and link to the .bin payload you want, and I may get to it in my free time. I understand many don't want to learn to do it themselves, but I did, and I am willing to help. (mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch dongle RCM-X86 dongle but I'm almost sure that it will work for any dongle and/or internal mod)
+Want .uf2 files for your switch hacking needs? ask and link to the .bin payload you want, and I may get to it in my free time. I understand many don't want to learn to do it themselves, but I did, and I am willing to help (mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch RCM-X86 dongle but it might work for other dongles and internal mods for the switch, based upon the Adafruit Trinket M0 board).
 
 Please note: this guide was made for users who have the Windows as their OS, while most of it could work for MacOS or Linux I can not help you there, I have no experience for MacOS and only use Linux on server based stuff.
 
