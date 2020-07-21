@@ -19,7 +19,7 @@ Go through [trinket m0: arduino-ide-setup] (https://learn.adafruit.com/adafruit-
 
 Summary:
 * Download and install arduino IDE http://www.arduino.cc/en/Main/Software
-* In Arduino: go to " Preferences " and add to "Additional Board Manager URLs" following URL:
+* In Arduino: go to " File " then " Preferences " and add to "Additional Board Manager URLs" following URL:
 *  `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json`
 * go to "Tools > Board > Board Manager" and select Type: All and
 * Install "Arduino SAMD Boards" by Arduino 
