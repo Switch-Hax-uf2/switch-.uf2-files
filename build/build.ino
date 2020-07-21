@@ -9,13 +9,13 @@
 // Contains fuseeBin and FUSEE_BIN_LENGTH
 // Include only one payload here
 // Use tools/binConverter.py to convert any payload bin you wish to load
-//#include "TXOS.h"
-//#include "rajnx_ipl072.h"
-//#include "hekate_ctcaer_32.h"
-//#include "ReiNX.h"
+//#include "sxos.h"
+//#include "rajnx.h"
+//#include "hekate.h"
+//#include "reinx.h"
 //#include "argon-nx.h"
-
-
+//#include "homemadecfw01.h"
+//#include "homemadecfw02.h"
 
 #define INTERMEZZO_SIZE 92
 const byte intermezzo[INTERMEZZO_SIZE] =
