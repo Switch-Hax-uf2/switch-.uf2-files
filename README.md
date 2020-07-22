@@ -2,7 +2,10 @@
 
 # switch-.uf2-files
 
-<p>Want .uf2 files for your switch hacking needs? If you request a payload be converted I should get around to it somewhat quickly.
+<p>Want .uf2 files for your switch hacking needs? If you request a payload be converted I should get around to it somewhat quickly. </p>
+
+[But here are the ones I have done currently](https://github.com/Switch-Hax-uf2/switch-.uf2-files/tree/master/uf2%20files)
+
 <sub><i>This is mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch RCM-X86 dongle but it might work for other dongles and internal mods for the switch if it's based upon the Adafruit Trinket M0 board, but don't quote me on that :) </i></sub></p>
 <br>
 
