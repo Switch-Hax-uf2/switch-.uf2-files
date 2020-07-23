@@ -2,11 +2,7 @@
 
 # switch-.uf2-files
 
-<p>Want .uf2 files for your switch hacking needs? If you request a payload be converted I should get around to it somewhat quickly. </p>
-
-[But here are the ones I have done currently](https://github.com/Switch-Hax-uf2/switch-.uf2-files/tree/master/uf2%20files)
-
-<sub><i>This is mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch RCM-X86 dongle but it might work for other dongles and internal mods for the switch if it's based upon the Adafruit Trinket M0 board, but don't quote me on that :) </i></sub></p>
+<p>Want .uf2 files for your switch hacking needs? If you request a payload be converted I should get around to it somewhat quickly. <a href="https://github.com/Switch-Hax-uf2/switch-.uf2-files/tree/master/uf2%20files">Here are the ones I have done currently.</a><sub><i>This is mainly meant for the https://github.com/euclala/RCM_typeC_ex Switch RCM-X86 dongle but it might work for other dongles and internal mods for the switch if it's based upon the Adafruit Trinket M0 board, but don't quote me on that :) </i></sub></p>
 <br>
 
 <p><b>Please note</b>: This guide was made for users who have the <ins><b>Windows</b></ins> as their OS, while most of it could work for Mac OS or Linux I can not help you there, I have no experience on Mac OS and only use Linux on occasion or for hobby things. Most things should translate over somewhat evenly but the batch files probably won't.</p>
@@ -30,7 +26,7 @@
 
 <li>Go to "<b>Sketch</b> > <b>Include Library</b> > <b>Manage Libraries</b>"</li><ul><li>Install "USBHost" by Arduino</li></ul></li><p></p>
 
-<li>Download the files in the build folder or the latest release of Build.7z <sub><i>(working from the build folder makes it easy and keeps all of the files together)</i></sub></li></ul>
+<li>Download the files in the build folder or the latest release of <a href="url">Build.7z</a> <sub><i>(working from the build folder makes it easy and keeps all of the files together)</i></sub></li></ul>
 <br>
 <h2>Getting down to business </h2>
 <sub><i>(payload.bin to payload.h conversion)</i></sub>
@@ -76,9 +72,9 @@
 
 <p>Once you have your build.ino.trinket_m0.bin <i>(not a payload.bin, this is a binary file)</i> compiled from arduino IDE you can close arduino IDE. You can continue to the "<b>Final stretch</b>" to finish making the .uf2 file. <sub><i>(While you can flash the board directly from the Arduino IDE, it requires a little bit more work, you can continue to "</i><b>The little bit more work</b><i>" if you want to setup directly board flashing.</i></sub></p>
 
-<ul><p1><li><b>The little bit more work</b> <sub><i>(flashing the board directly)</i></sub><ol><li>A driver is required to push the binary to the dongle from arduino IDE, it can be found below or if you want to get it yourself it is called adafruit_drivers_2.2.0.0.exe <sub><i>(It is also in the Credits)</i></sub></li><li>Warning! Connect the dongle to your computer and do not Click the Reset Button. Do not Click the Reset Button. Do not Click the Reset Button. <sub><i>(This is the warning given by euclala for the RMCx86)</i></sub></li><li>You can verify the file and then upload the compiled binary to the dongle under "<b>Tools</b> > <b>Port</b>> <b>trinket M0</b>".</li></ol></li></p1></ul>
+<ul><p1><li><b>The little bit more work</b> <sub><i>(flashing the board directly)</i></sub><ol><li>A driver is required to push the binary to the dongle from arduino IDE, it can be found <a href="https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe">here</a> or if you want to get it yourself it is called adafruit_drivers_2.2.0.0.exe <sub><i>(It is also in the Credits)</i></sub></li><li>Warning! Connect the dongle to your computer and do not Click the Reset Button. Do not Click the Reset Button. Do not Click the Reset Button. <sub><i>(This is the warning given by euclala for the RMCx86)</i></sub></li><li>You can verify the file and then upload the compiled binary to the dongle under "<b>Tools</b> > <b>Port</b>> <b>trinket M0</b>".</li></ol></li></p1></ul>
 
-[Driver](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe)
+
 <br>
 <h2>Final stretch here</h2>
 <sub><i>(Turning the binary .bin into a .uf2 file)</i></sub>
@@ -98,16 +94,16 @@
 
 Credits:
 <br>
-[Euclala](https://github.com/euclala/) for the build.ino and the <span>binConverter.py</span>
+<a href="https://github.com/euclala/">Euclala</a> for the build.ino and the <span>binConverter.py</span>
 <br>
-[Microsoft](https://github.com/microsoft/) for the <span>uf2conv.py</span>
+<a href="https://github.com/microsoft/">Microsoft</a> for the <span>uf2conv.py</span>
 <br>
-[Adafruit](https://github.com/adafruit/) for the drivers
+<a href="https://github.com/adafruit/">Adafruit</a> for the drivers
 <br>
-Link to [build.ino](https://github.com/euclala/fix_dongle/blob/master/build/build.ino), I have literally only added a 3 lines to it.
+Link to <a href="https://github.com/euclala/fix_dongle/blob/master/build/build.ino">build.ino</a>, I have literally only added a 3 lines to it.
 <br>
-Link to [binConverter.py](https://github.com/euclala/fix_dongle/blob/master/tools/binConverter.py), I have changed mine a little but it's still mostly their code .
+Link to <a href="https://github.com/euclala/fix_dongle/blob/master/tools/binConverter.py">binConverter.py</a>, I have changed mine a little but it's still mostly their code .
 <br>
-Link to [uf2conv.py](https://github.com/microsoft/uf2/blob/master/utils/uf2conv.py), I did have to edit this one quite a bit if I remember right.
+Link to <a href="https://github.com/microsoft/uf2/blob/master/utils/uf2conv.py">uf2conv.py</a>, I did have to edit this one quite a bit if I remember right.
 <br>
-Link to driver directly [here](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe) or [release page](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/)
+Link to driver directly <a href="https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe">here</a> or <a href="https://github.com/adafruit/Adafruit_Windows_Drivers/releases/">release page</a>
